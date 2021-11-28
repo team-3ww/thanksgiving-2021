@@ -1,0 +1,14 @@
+.group {
+    border: solid black 1px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.group p {
+    padding-left: 20px;
+}
+
+.extraction tr td:first-child {
+    width: 25px;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Friends</title>
+    <meta name="site_name" content="Thanksgiving 2021 Puzzles" />
+    <meta property="og:title" content="Friends" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:site_name" content="Thanksgiving 2021 Puzzles" />
+    <meta name="theme-color" content="#ffa600" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="puzzle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha256.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MD06EHP2ZN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-MD06EHP2ZN');
+    </script>
+    <script src="../../scripts/main.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="back">
+            <a href="../../">← Back to all puzzles</a>
+        </div>
+        <div id="alert" class="modal alert"></div>
+        <div class="guess">
+            <input type="text" id="guess-box" class="guess-box" maxlength="30" placeholder="" />
+            <button type="submit" id="submit">Submit</button>
+        </div>
+        <br />
+        <h2 class="title">Friends</h2>
+        <p class="solved">Solved: <span class="solution"></span></p>
+        <div class="puzzle-content">
+            <p class="flavor">
+                That which we call a dish by any other name would still be our friend's
+            </p>
+
+            <div class="group">
+                <ul>
+                    <li>
+                        <a href="../../assets/friends_01.mp3" target="_blank">♪ It's Friday, Friday... ♪</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/friends_02.mp3" target="_blank">♪ Somewhere over the... ♪</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/friends_03.mp3" target="_blank">♪ Polaroid of you... ♪</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/friends_04.mp3" target="_blank">♪ We are the... ♪</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/friends_05.mp3" target="_blank">♪ So darling, darling... ♪</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/friends_06.mp3" target="_blank">♪ Help me, when... ♪</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/friends_07.mp3" target="_blank">♪ You don't know... ♪</a>
+                    </li>
+                </ul>
+                <p>___(3)___ &nbsp; &nbsp; &nbsp; ___(5)___</p>
+            </div>
+
+            <div class="group">
+                <ul>
+                    <li>He ran for presidential candidacy in 2020</li>
+                    <li>Currently the junior one from AR, since 2015</li>
+                    <li>Currently the junior one from ND, since 2019</li>
+                    <li>First woman to serve in the role</li>
+                    <li>Replaced by Kyrsten because he did not seek re-election in 2018</li>
+                    <li>She lost re-election to the man who made a clenched-fist salute to Capitol rioters on Jan 6</li>
+                    <li>Republican who voted for conviction the second time Donald was impeached</li>
+                </ul>
+                <p>___(3)___ &nbsp; &nbsp; &nbsp; ___(4)___</p>
+            </div>
+
+            <div class="group">
+                <ul>
+                    <li>
+                        🇧🇷: 🥇(relay), 4th 100mBR, 8th 200mBR
+                    </li>
+                    <li>
+                        🇯🇵: 🥈(relay), 10th 100mFL
+                    </li>
+                    <li style="line-height:18px;">
+                        🇬🇷: 🥇🥈<br />🇨🇳: 🥇🥇🥉🥉<br />🇬🇧: 🥇🥇🥈🥈🥉<br />🇧🇷: 🥇
+                    </li>
+                    <li style="line-height:18px;">
+                        🇬🇷: 🥇🥇🥇🥇🥇🥇🥉🥉<br />🇨🇳: 🥇🥇🥇🥇🥇🥇🥇🥇<br />🇬🇧: 🥇🥇🥇🥇🥈🥈<br />🇧🇷:
+                        🥇🥇🥇🥇🥇🥈
+                    </li>
+                    <li style="line-height:18px;">
+                        🇧🇷: 🥇(relay), 7th 100mFL<br />🇯🇵: 🥇(relay)
+                    </li>
+                    <li style="line-height:18px;">🇨🇳: 🥇 200mBR, 🥈(relay), 🥈 100mBR<br />🇬🇧: 🥇 200mBR,
+                        🥇(relay), 🥈 100mBR
+                    </li>
+                    <li style="line-height:18px;">
+                        🇫🇮: 🥇 200mBR<br />🇦🇺: 🥈 200mBR
+                    </li>
+                </ul>
+                <p>___(1)___ &nbsp; &nbsp; &nbsp; ___(2)___</p>
+            </div>
+
+            <div class="group">
+                <ul>
+                    <li>SSA: 7th/770th</li>
+                    <li>SSA: 12th</li>
+                    <li>SSA: 57th/823rd</li>
+                    <li>SSA: 93rd</li>
+                    <li>SSA: 156th</li>
+                    <li>SSA: 250th</li>
+                    <li>SSA: 829th</li>
+                </ul>
+                <p>___(4)___ &nbsp; &nbsp; &nbsp; ___(3)___</p>
+            </div>
+
+            <div class="group">
+                <ul>
+                    <li>2011: 🇺🇸 (1st – 🥇)</li>
+                    <li>2011: 🇷🇴 (42nd – 🥈)</li>
+                    <li>2011: 🇸🇬 (55th – 🥈)</li>
+                    <li>2011: 🇸🇮 (165th)</li>
+                    <li>2012: 🇺🇸 (21st – 🥇)</li>
+                    <li>2019: 🇬🇧 (72nd – 🥈)</li>
+                    <li>2019: 🇨🇾 (235th)</li>
+                </ul>
+                <p>___(3)___ &nbsp; &nbsp; &nbsp; ___(2)___</p>
+            </div>
+
+            <div class="group">
+                <ul>
+                    <li>love interest of Elektra</li>
+                    <li>lover of Romeo</li>
+                    <li>concubine of Leto</li>
+                    <li>childhood friend of Jenny</li>
+                    <li>sidekick of Smolder</li>
+                    <li>mother of Dora</li>
+                    <li>daughter of Thanos</li>
+                </ul>
+                <p>___(2)___ &nbsp; &nbsp; &nbsp; ___(9)___</p>
+            </div>
+
+            <div class="group">
+                <ul>
+                    <li>
+                        <a href="../../assets/friends_11.mp3" target="_blank">"Just like our marriage..."</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/friends_12.mp3" target="_blank">"We meet again at..."</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/friends_13.mp3" target="_blank">"Merry Christmas, little fella..."</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/friends_14.mp3" target="_blank">"You were just a..."</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/friends_15.mp3" target="_blank">"You're the weak one..."</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/friends_16.mp3" target="_blank">"When Walker and Vasquez..."</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/friends_17.mp3" target="_blank">"Can I say something..."</a>
+                    </li>
+                </ul>
+                <p>___(4)___ &nbsp; &nbsp; &nbsp; ___(4)___</p>
+            </div>
+
+            <hr>
+
+            <p class="flavor">You weren't initially sure if the dish was overcooked.. ..but managed to salvage it just in the
+                nick of time.</p>
+
+            <ul>
+                <table class="extraction">
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>El..</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Hsia..</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Bam..</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>..Toro</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>..Bam</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>..de</td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>..General</td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td>Riptide..</td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td>Ol&#39;Uncle..</td>
+                        </tr>
+                        <tr>
+                            <td>10.</td>
+                            <td>Spartan..</td>
+                        </tr>
+                        <tr>
+                            <td>11.</td>
+                            <td>..Tosho</td>
+                        </tr>
+                        <tr>
+                            <td>12.</td>
+                            <td>Lor..</td>
+                        </tr>
+                        <tr>
+                            <td>13.</td>
+                            <td>..Moon</td>
+                        </tr>
+                        <tr>
+                            <td>14.</td>
+                            <td>..Rocket</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ul>
+
+        </div>
+</body>
+
+</html>

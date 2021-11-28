@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Before Initiation</title>
+    <meta name="site_name" content="Thanksgiving 2021 Puzzles" />
+    <meta property="og:title" content="Before Initiation" />
+    <meta property="og:image" content="../assets/favicon/favicon-32x32.png" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:site_name" content="Thanksgiving 2021 Puzzles" />
+    <meta name="theme-color" content="#ffa600" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="puzzle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha256.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MD06EHP2ZN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-MD06EHP2ZN');
+    </script>
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <div class="content">
+        <div class="back">
+            <a href="../">Go to main round</a>
+        </div>
+        <div id="alert" class="modal alert"></div>
+        <div class="guess">
+            <input type="text" id="guess-box" class="guess-box" maxlength="30" placeholder="" />
+            <button type="submit" id="submit">Submit</button>
+        </div>
+        <br />
+        <h2 class="title">Before Initiation</h2>
+        <p class="solved">Solved: <span class="solution"></span></p>
+        <div class="puzzle-content">
+            <p>
+                <i>The dedication of this puzzle is split in the usual ways.<br/>
+                Who's the best person to puzzle hunt with (and also an apt descriptor for the person who composed this)?
+                </i>
+            </p>
+            <hr />
+            <ul class="clues">
+                <li>Blood of <span>A</span>rctic fish was believed to contain these <span>p</span>rote[i i]n the 1950's</li>
+                <li>Chicago shopping mall, an I<span>n</span>dy 400 race, a<span>n</span>[d t]he NCSU college plaza e.g</li>
+                <li>David Greybeard is an ex<span>a</span>mple of this species studie[d i]n Africa by Jane</li>
+                <li><span>G</span>im<span>m</span>icky Yu<span>g</span>ioh trap card that [I s]hould use as a monster: __ of Apop<span>h</span>is</li>
+                <li>Flask type with conical body n<span>a</span>med for Europ[e l]aboratory scientist <span>E</span>mil</li>
+                <li>Equipment for ice sport that contains name of wel[l a]cclaimed Bard fai<span>r</span>y</li>
+                <li>A musical note interval represented by first two tones fro[m N]BC's chime</li>
+            </ul>
+
+            <table cellspacing="0" cellpadding="0">
+                <tr>
+                    <td class="s"><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td class="s"><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>(8)</td>
+                    <td>&nbsp;</td>
+                    <td>(21)</td>
+                    <td>(18)</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td class="s"><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td class="s"><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                </tr>
+                <tr>
+                    <td>(19)</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>(16)</td>
+                    <td>(3)</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td class="s"><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td class="s"><input type="text" maxlength=1 /></td>
+                </tr>
+                <tr>
+                    <td>(1)</td>
+                    <td>&nbsp;</td>
+                    <td>(12)</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>(7)</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="s"><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td class="s"><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>(14)</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>(15)</td>
+                    <td>&nbsp;</td>
+                    <td>(2)</td>
+                    <td>&nbsp;</td>
+
+                </tr>
+                <tr>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td class="s"><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td class="s"><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>(4)</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>(6)</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>(9)</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+
+                </tr>
+                <tr>
+                    <td class="s"><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td class="s"><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>(5)</td>
+                    <td>(20)</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>(10)</td>
+                </tr>
+                <tr>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td class="s"><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td class="s"><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                    <td><input type="text" maxlength=1 /></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>(11)</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>(13)</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>(17)</td>
+                </tr>
+            </table>
+            <p class="subnote">(Text input is for convenience only and not a puzzle)</p>
+            <hr/>
+            <a class="toggle-1" href="#">Reveal easier version of puzzle</a>
+            <br/><br/>
+            <a class="toggle-2" href="#">Reveal easiest version of puzzle</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

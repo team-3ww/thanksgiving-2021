@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Tournament of the Champions</title>
+    <meta name="site_name" content="Thanksgiving 2021 Puzzles" />
+    <meta property="og:title" content="The Tournament of the Champions" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:site_name" content="Thanksgiving 2021 Puzzles" />
+    <meta name="theme-color" content="#ffa600" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="puzzle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha256.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MD06EHP2ZN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-MD06EHP2ZN');
+    </script>
+    <script src="../../scripts/main.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="back">
+            <a href="../../">← Back to all puzzles</a>
+        </div>
+        <div id="alert" class="modal alert"></div>
+        <div class="guess">
+            <input type="text" id="guess-box" class="guess-box" maxlength="30" placeholder="" />
+            <button type="submit" id="submit">Submit</button>
+        </div>
+        <br />
+        <h2 class="title">The Tournament of the Champions</h2>
+        <p class="solved">Solved: <span class="solution"></span></p>
+        <div class="puzzle-content">
+            <p class="flavor">The margin–of–error for putting together a final breakfast of the champions is small
+                but nonzero.
+                <br />Best ensure the temp does not go below '99.
+            </p>
+
+            <table class="data" cellspacing=0 cellpadding=0>
+                <tbody>
+                    <tr>
+                        <td><img src="../../assets/champions_a01.jpeg" /></td>
+                        <td><img src="../../assets/champions_b01.jpeg" /></td>
+                        <td>&nbsp;</td>
+                        <td><img src="../../assets/champions_d01.jpeg" /></td>
+                        <td><img src="../../assets/champions_c01.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/champions_a02.jpeg" /></td>
+                        <td><img src="../../assets/champions_b02.jpeg" /></td>
+                        <td>&nbsp;</td>
+                        <td><img src="../../assets/champions_d02.jpeg" /></td>
+                        <td><img src="../../assets/champions_c02.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/champions_a03.jpeg" /></td>
+                        <td><img src="../../assets/champions_b03.jpeg" /></td>
+                        <td>&nbsp;</td>
+                        <td><img src="../../assets/champions_d03.jpeg" /></td>
+                        <td><img src="../../assets/champions_c03.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/champions_a04.jpeg" /></td>
+                        <td><img src="../../assets/champions_b04.jpeg" /></td>
+                        <td>&nbsp;</td>
+                        <td><img src="../../assets/champions_d04.jpeg" /></td>
+                        <td><img src="../../assets/champions_c04.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/champions_a05.jpeg" /></td>
+                        <td><img src="../../assets/champions_b05.jpeg" /></td>
+                        <td>&nbsp;</td>
+                        <td><img src="../../assets/champions_d05.jpeg" /></td>
+                        <td><img src="../../assets/champions_c05.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/champions_a06.jpeg" /></td>
+                        <td><img src="../../assets/champions_b06.jpeg" /></td>
+                        <td>&nbsp;</td>
+                        <td><img src="../../assets/champions_d06.jpeg" /></td>
+                        <td><img src="../../assets/champions_c06.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/champions_a07.jpeg" /></td>
+                        <td><img src="../../assets/champions_b07.jpeg" /></td>
+                        <td>&nbsp;</td>
+                        <td><img src="../../assets/champions_d07.jpeg" /></td>
+                        <td><img src="../../assets/champions_c07.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/champions_a08.jpeg" /></td>
+                        <td><img src="../../assets/champions_b08.jpeg" /></td>
+                        <td>&nbsp;</td>
+                        <td><img src="../../assets/champions_d08.jpeg" /></td>
+                        <td><img src="../../assets/champions_c08.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/champions_a09.jpeg" /></td>
+                        <td><img src="../../assets/champions_b09.jpeg" /></td>
+                        <td>&nbsp;</td>
+                        <td><img src="../../assets/champions_d09.jpeg" /></td>
+                        <td><img src="../../assets/champions_c09.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/champions_a10.jpeg" /></td>
+                        <td><img src="../../assets/champions_b10.jpeg" /></td>
+                        <td>&nbsp;</td>
+                        <td><img src="../../assets/champions_d10.jpeg" /></td>
+                        <td><img src="../../assets/champions_c10.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/champions_a11.jpeg" /></td>
+                        <td><img src="../../assets/champions_b11.jpeg" /></td>
+                        <td>&nbsp;</td>
+                        <td><img src="../../assets/champions_d11.jpeg" /></td>
+                        <td><img src="../../assets/champions_c11.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/champions_a12.jpeg" /></td>
+                        <td><img src="../../assets/champions_b12.jpeg" /></td>
+                        <td>&nbsp;</td>
+                        <td><img src="../../assets/champions_d12.jpeg" /></td>
+                        <td><img src="../../assets/champions_c12.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/champions_a13.jpeg" /></td>
+                        <td><img src="../../assets/champions_b13.jpeg" /></td>
+                        <td>&nbsp;</td>
+                        <td><img src="../../assets/champions_d13.jpeg" /></td>
+                        <td><img src="../../assets/champions_c13.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/champions_a14.jpeg" /></td>
+                        <td><img src="../../assets/champions_b14.jpeg" /></td>
+                        <td>&nbsp;</td>
+                        <td><img src="../../assets/champions_d14.jpeg" /></td>
+                        <td><img src="../../assets/champions_c14.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/champions_a15.jpeg" /></td>
+                        <td><img src="../../assets/champions_b15.jpeg" /></td>
+                        <td>&nbsp;</td>
+                        <td><img src="../../assets/champions_d15.jpeg" /></td>
+                        <td><img src="../../assets/champions_c15.jpeg" /></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+
+            <table class="e">
+                <tbody>
+                    <tr>
+                        <td>1.&nbsp; </td>
+                        <td>10. and 14.</td>
+                    </tr>
+                    <tr>
+                        <td>2.&nbsp; </td>
+                        <td>Investment advisor</td>
+                    </tr>
+                    <tr>
+                        <td>3.&nbsp; </td>
+                        <td>___&nbsp; of Sing Sing</td>
+                    </tr>
+                    <tr>
+                        <td>4.&nbsp; </td>
+                        <td>Nightshade</td>
+                    </tr>
+                    <tr>
+                        <td>5.&nbsp; </td>
+                        <td>6. and 7.</td>
+                    </tr>
+                    <tr>
+                        <td>6.&nbsp; </td>
+                        <td>Oswald</td>
+                    </tr>
+                    <tr>
+                        <td>7.&nbsp; </td>
+                        <td>Wu Minxia</td>
+                    </tr>
+                    <tr>
+                        <td>8.&nbsp; </td>
+                        <td>4. and 3.</td>
+                    </tr>
+                    <tr>
+                        <td>9.&nbsp; </td>
+                        <td>X-Men character</td>
+                    </tr>
+                    <tr>
+                        <td>10.&nbsp; </td>
+                        <td>A lyric in &quot;The World Was Wide Enough&quot;</td>
+                    </tr>
+                    <tr>
+                        <td>11.&nbsp; </td>
+                        <td>Peter Flannery book</td>
+                    </tr>
+                    <tr>
+                        <td>12.&nbsp; </td>
+                        <td>Not generalist</td>
+                    </tr>
+                    <tr>
+                        <td>13.&nbsp; </td>
+                        <td>Berra</td>
+                    </tr>
+                    <tr>
+                        <td>14.&nbsp; </td>
+                        <td>___&nbsp; fire</td>
+                    </tr>
+                    <tr>
+                        <td>15.&nbsp; </td>
+                        <td>Star___</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</body>
+
+</html>

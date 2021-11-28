@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Designed in Year of the Ox</title>
+    <meta name="site_name" content="Thanksgiving 2021 Puzzles" />
+    <meta property="og:title" content="Designed in Year of the Ox" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:site_name" content="Thanksgiving 2021 Puzzles" />
+    <meta name="theme-color" content="#ffa600" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="puzzle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha256.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MD06EHP2ZN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-MD06EHP2ZN');
+    </script>
+    <script src="../../scripts/main.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="back">
+            <a href="../../">← Back to all puzzles</a>
+        </div>
+        <div id="alert" class="modal alert"></div>
+        <div class="guess">
+            <input type="text" id="guess-box" class="guess-box" maxlength="30" placeholder="" />
+            <button type="submit" id="submit">Submit</button><br />
+            <br />
+        </div>
+        <br />
+        <h2 class="title">Designed in Year of the Ox</h2>
+        <p class="solved">Solved: <span class="solution"></span></p>
+        <div class="puzzle-content">
+            <p class="flavor">
+                Some colorfully well-presented dishes we have here...
+            </p>
+            <ul>
+                <li><img src="../../assets/designed_1.jpeg" /></li>
+                <li><img src="../../assets/designed_2.jpeg" /></li>
+                <li><img src="../../assets/designed_3.jpeg" /></li>
+                <li><img src="../../assets/designed_4.jpeg" /></li>
+                <li><img src="../../assets/designed_5.jpeg" /></li>
+                <li><img src="../../assets/designed_6.jpeg" /></li>
+                <li><img src="../../assets/designed_7.jpeg" /></li>
+                <li><img src="../../assets/designed_8.jpeg" /></li>
+            </ul>
+            <hr>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div style="background-color:#9e9e9e">[1]</div>
+                        </td>
+                        <td>
+                            <div style="background-color:#ff1744">[2]</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="background-color:#ffeb3b">[2]</div>
+                        </td>
+                        <td>
+                            <div style="background-color:#03a9f4">[8]</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="background-color:#03a9f4">[2]</div>
+                        </td>
+                        <td>
+                            <div style="background-color:#ff4081">[6]</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="background-color:#4caf50">[2]</div>
+                        </td>
+                        <td>
+                            <div style="background-color:#d500f9">[4]</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</body>
+
+</html>

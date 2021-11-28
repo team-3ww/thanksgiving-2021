@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Journey to the Past</title>
+    <meta name="site_name" content="Thanksgiving 2021 Puzzles" />
+    <meta property="og:title" content="Journey to the Past" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:site_name" content="Thanksgiving 2021 Puzzles" />
+    <meta name="theme-color" content="#ffa600" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="puzzle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha256.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MD06EHP2ZN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-MD06EHP2ZN');
+    </script>
+    <script src="../../scripts/main.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="back">
+            <a href="../../">← Back to all puzzles</a>
+        </div>
+        <div id="alert" class="modal alert"></div>
+        <div class="guess">
+            <input type="text" id="guess-box" class="guess-box" maxlength="30" placeholder="" />
+            <button type="submit" id="submit">Submit</button>
+        </div>
+        <br />
+        <h2 class="title">Journey to the <del>Past</del></h2>
+        <p class="solved">Solved: <span class="solution"></span></p>
+        <div class="puzzle-content">
+            <p class="flavor">Using the proper grams of ingredients for this dish makes all the difference...</p>
+            <ul>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>You Re-stepped Out of a Dream</td>
+                            <td>the main character's friend (4 4)</td>
+                        </tr>
+                        <tr>
+                            <td>White Horse Overture</td>
+                            <td>the main villain (6 5)</td>
+                        </tr>
+                        <tr>
+                            <td>Two Poor, Poor Joseph</td>
+                            <td>the youngest brother (4 5)</td>
+                        </tr>
+                        <tr>
+                            <td>Go to Third Base with Daddy's Little Angel (r)</td>
+                            <td>the crustacean (5 6)</td>
+                        </tr>
+                        <tr>
+                            <td>The Creation of HeptaMan</td>
+                            <td>the main villain* (9)</td>
+                        </tr>
+                        <tr>
+                            <td>This is the Tenth Moment</td>
+                            <td>the alter ego (5 6)</td>
+                        </tr>
+                        <tr>
+                            <td>Happy to Keep His Bismuth Dinner Warm (r)</td>
+                            <td>the main character (5 3)</td>
+                        </tr>
+                        <tr>
+                            <td>Alone at a Drive-In Movie Ace</td>
+                            <td>the main character's best friend (5 5)</td>
+                        </tr>
+                        <tr>
+                            <td>Oh, When the Thinks You Can Think!</td>
+                            <td>the marsupial bear (5 2)</td>
+                        </tr>
+                        <tr>
+                            <td>Ex-Urinetown</td>
+                            <td>the CEO's daughter* (4 8)</td>
+                        </tr>
+                        <tr>
+                            <td>Bravest Individual Pursuit of Happiness</td>
+                            <td>the movie star's girlfriend (5 7-6)</td>
+                        </tr>
+                        <tr>
+                            <td>Normandy Qing</td>
+                            <td>the jester (5 11)</td>
+                        </tr>
+                        <tr>
+                            <td>Human Again Domingo</td>
+                            <td>the belle (6 7)</td>
+                        </tr>
+                        <tr>
+                            <td>Virginia Coffee Shop Nights</td>
+                            <td>the flamboyant director (7 3)</td>
+                        </tr>
+                        <tr>
+                            <td>Something Funny's Going On Sunday</td>
+                            <td>the French nightclub singer (4 2)</td>
+                        </tr>
+                        <tr>
+                            <td>Comedy Xe Tonight</td>
+                            <td>the madame (4 4)</td>
+                        </tr>
+                        <tr>
+                            <td>Eighty-six Dry Pints I'll Know</td>
+                            <td>the horse (4 5)</td>
+                        </tr>
+                        <tr>
+                            <td>Fly, Fly Away Give Peace a Chance</td>
+                            <td>the airline exec (7 4)</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>
+                                <p class="note">* use the obvious name</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>(3&nbsp;&nbsp;8)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ul>
+        </div>
+</body>
+
+</html>

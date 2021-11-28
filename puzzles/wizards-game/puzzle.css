@@ -1,0 +1,44 @@
+table {
+    border-collapse: collapse;
+}
+
+table td {
+    border: solid 1px #222;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
+
+table.e tr td:first-child {
+    border: none;
+    width: 30px;
+    text-align: left;
+}
+
+.col1,
+.col2 {
+    float: left;
+    width: 49.5%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col2 {
+    border-left: solid 1px #888;
+}
+
+.col2 p {
+    color: #888;
+}
+
+.col2 img {
+    margin: 10px 10px 10px 0;
+}
+
+.col2 div {
+    margin-left: 20px;
+}

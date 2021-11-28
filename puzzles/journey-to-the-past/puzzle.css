@@ -1,0 +1,8 @@
+.note {
+    color: #888;
+    font-size: 13px;
+}
+
+table tr td:first-child {
+    width: 400px;
+}

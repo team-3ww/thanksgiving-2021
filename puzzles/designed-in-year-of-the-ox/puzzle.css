@@ -1,0 +1,25 @@
+ul {
+  text-align: center;
+}
+
+ul li img {
+  height: 150px;
+  max-width: 100%;
+}
+
+table {
+  text-align: center;
+  margin: auto;
+}
+
+table td {
+    height: 5px;
+}
+
+table div {
+  text-align: center;
+  padding: 6px;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Family-style Feast</title>
+    <meta name="site_name" content="Thanksgiving 2021 Puzzles" />
+    <meta property="og:title" content="Family-style Feast" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:site_name" content="Thanksgiving 2021 Puzzles" />
+    <meta name="theme-color" content="#ffa600" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="puzzle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha256.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MD06EHP2ZN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-MD06EHP2ZN');
+    </script>
+    <script src="../../scripts/main.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="back">
+            <a href="../../">← Back to all puzzles</a>
+        </div>
+        <div id="alert" class="modal alert"></div>
+        <div class="guess">
+            <input type="text" id="guess-box" class="guess-box" maxlength="100" placeholder=""
+                style="font-size:14px;" />
+            <button type="submit" id="submit">Submit</button>
+        </div>
+        <br />
+        <h2 class="title">Family-style Feast</h2>
+        <p class="solved">Solved: <span class="solution"></span></p>
+        <div class="puzzle-content">
+            <p class="flavor">
+                It's time to share our dishes and have a delicious seven-course feast together!<br />
+            </p>
+
+            <div class="graphic">
+                <p>The team members take their seats at the dinner table, dishes between them.</p>
+                <img src="../../assets/feast-table.png" height=300>
+                <p class="subtitle">
+                    (Spacing/orientation of chairs in image is NOT important
+                    i.e. just assume that the seven chairs are identical,
+                    evenly spaced around table,
+                    with dishes evenly spaced in between.)
+                </p>
+            </div>
+
+            <p>
+                Each member begins with the dish on his/her left, and samples a bite from each plate going
+                clockwise.<br />
+                Here's how they respectively reacted:
+            </p>
+
+            <ul>
+                <li>
+                    <i>(asking the friend to his left)</i> "Which NFL team used to play in your hometown?"
+                </li>
+                <li>
+                    "At least it's not bacteria..."
+                </li>
+                <li>
+                    <i>* gives up on this game *</i>
+                </li>
+                <li>
+                    "If the tenth U.S. president had a PhD, what would you call him?"
+                </li>
+                <li>
+                    "I'm gonna end slavery."
+                </li>
+                <li>
+                    "It seems... the flavor just comes out of nowhere..."
+                </li>
+                <li>
+                    "Tasted like fine cuisine from the capital city of my home state!"
+                </li>
+            </ul>
+
+            <hr>
+
+            <p><b>What each friend ate:</b></p>
+
+            <table class="ate">
+                <tr>
+                    <td>Becky&nbsp; </td>
+                    <td>
+                        <div class="boxed">17</div>&nbsp;_&nbsp;_&nbsp;_&nbsp;<div class="boxed">23</div>&nbsp;_&nbsp;_
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ben&nbsp; </td>
+                    <td>_&nbsp;_&nbsp;_&nbsp;_&nbsp;<div class="boxed">33</div>&nbsp;<div class="boxed">26</div>&nbsp;_
+                    </td>
+                </tr>
+                <tr>
+                    <td>Clare&nbsp; </td>
+                    <td>_&nbsp;_&nbsp;_&nbsp;<div class="boxed">39</div>&nbsp;_&nbsp;_&nbsp;<div class="boxed">42</div>
+                    </td>
+                <tr>
+                    <td>Eva&nbsp; </td>
+                    <td>_&nbsp;_&nbsp;<div class="boxed">30</div>&nbsp;<div class="boxed">11</div>&nbsp;_&nbsp;_&nbsp;_
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kevin&nbsp; </td>
+                    <td>_&nbsp;_&nbsp;_&nbsp;<div class="boxed">22</div>&nbsp;<div class="boxed">10</div>&nbsp;_&nbsp;_
+                    </td>
+                </tr>
+                <tr>
+                    <td>Michael&nbsp; </td>
+                    <td>_&nbsp;_&nbsp;_&nbsp;_&nbsp;<div class="boxed">14</div>&nbsp;_&nbsp;<div class="boxed">28</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tommy (aka Tom/Thomas)&nbsp; </td>
+                    <td>_&nbsp;_&nbsp;_&nbsp;<div class="boxed">34</div>&nbsp;<div class="boxed">15</div>&nbsp;_&nbsp;_
+                    </td>
+                </tr>
+            </table>
+
+            <p><b>They were also careful to keep the leftovers in order:</b></p>
+
+            <table class="leftovers">
+                <tr>
+                    <td>
+                        <div>36</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>8</div>
+                    </td>
+                    <td>
+                        <div>37</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>27</div>
+                    </td>
+                    <td>
+                        <div>38</div>
+                    </td>
+                    <td>
+                        <div>1</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>41</div>
+                    </td>
+                    <td>
+                        <div>25</div>
+                    </td>
+                    <td>
+                        <div>16</div>
+                    </td>
+                    <td>
+                        <div>5</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>32</div>
+                    </td>
+                    <td>
+                        <div>35</div>
+                    </td>
+                    <td>
+                        <div>7</div>
+                    </td>
+                    <td>
+                        <div>12</div>
+                    </td>
+                    <td>
+                        <div>4</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>13</div>
+                    </td>
+                    <td>
+                        <div>31</div>
+                    </td>
+                    <td>
+                        <div>9</div>
+                    </td>
+                    <td>
+                        <div>3</div>
+                    </td>
+                    <td>
+                        <div>21</div>
+                    </td>
+                    <td>
+                        <div>19</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>20</div>
+                    </td>
+                    <td>
+                        <div>24</div>
+                    </td>
+                    <td>
+                        <div>29</div>
+                    </td>
+                    <td>
+                        <div>2</div>
+                    </td>
+                    <td>
+                        <div>6</div>
+                    </td>
+                    <td>
+                        <div>18</div>
+                    </td>
+                    <td>
+                        <div>40</div>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <p><i>How did everyone celebrate the successful conclusion of this Thanksgiving feast?</i></p>
+            <p>(6&nbsp;&nbsp;1&nbsp;&nbsp;5&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;6&nbsp;&nbsp;2&nbsp;&nbsp;5&nbsp;&nbsp;7)
+            </p>
+        </div>
+</body>
+
+</html>

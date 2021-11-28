@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Lusitana&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Mono&display=swap");
+
+@font-face {
+  font-family: CabinSketch;
+  src: url("../assets/cabinsketch.ttf");
+}
+
+body {
+  font-family: Lusitana, serif;
+  background: url("../assets/leaves-bg-a.png") no-repeat center center fixed;
+  background-color: rgba(194, 187, 169, 0.3);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.title {
+  font-family: CabinSketch, sans-serif;
+}
+
+h2.title {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: Lusitana, serif;
+}
+
+.content {
+  padding: 35px 70px;
+}
+
+a {
+  color: #666;
+}
+
+.back a {
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #eee;
+  padding: 4px 8px;
+}
+
+.guess {
+  float: right;
+  display: inline-flex;
+}
+
+.guess input {
+  height: 40px;
+  width: 300px;
+  padding: 2px 10px;
+  outline: none;
+  border: solid #777 2px;
+  border-right: none;
+  font-family: "DM Mono", monospace;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.guess button {
+  height: 48px;
+  border: solid #777 2px;
+  border-left: none;
+  border-radius: 0;
+  margin-left: -2px;
+  font-family: "Lusitana", serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.guess button:active,
+.guess button:hover {
+  background-color: #ddd;
+}
+
+#alert {
+  text-align: center;
+  padding: 0;
+}
+
+#alert p {
+  padding-left: 10px;
+}
+
+#alert > p:first-child {
+  margin: auto;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#alert.correct > p:first-child {
+  background-color: #8da65e;
+  font-size: 20px;
+}
+
+#alert img {
+  width: 150px;
+  margin-top: 5px;
+}
+
+#alert section.note {
+  font-size: 13px;
+  color: #888;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+#alert section.note ul {
+  list-style: circle;
+}
+
+#alert .subnote {
+  color: #666;
+  font-size: 14px;
+}
+
+.solved {
+  width: 450px;
+  background-color: #8da65e;
+  border-radius: 5px;
+  padding: 5px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  display: none;
+  cursor: pointer;
+}
+
+.solved:hover {
+  opacity: 0.8;
+}
+
+.solution {
+  margin-left: 5px;
+  font-family: "DM Mono", monospace;
+}
+
+.puzzle-content {
+  border: solid #777 2px;
+  background-color: #fcf5e5;
+  padding: 20px 40px;
+  margin-top: 15px;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.flavor {
+  font-style: italic;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li,
+ol li {
+  margin-bottom: 10px;
+}
+
+.boxed {
+  border: solid 1px black;
+  padding: 0px 4px;
+}
+
+.errata {
+  border: solid 1px black;
+  background-color: #fafafa;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 756px) {
+  body {
+    font-size: 14px;
+  }
+  h2.title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  .content {
+    padding: 3px 6px;
+  }
+  .puzzle-content {
+    padding: 4px 12px;
+  }
+  .guess input {
+    width: 240px;
+  }
+}
+
+@media print {
+  body,
+  p {
+    font-size: 14px;
+    -webkit-print-color-adjust: exact !important;
+  }
+  h2.title {
+    font-size: 24px;
+  }
+  .content {
+    padding: 5px;
+  }
+  .puzzle-content {
+    max-width: none;
+    padding: 5px 10px;
+    background-color: white;
+  }
+  .guess,
+  .back {
+    display: none !important;
+  }
+
+  @page {
+    size: auto;
+    margin: 0mm;
+  }
+}

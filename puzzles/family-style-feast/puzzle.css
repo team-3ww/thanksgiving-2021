@@ -1,0 +1,42 @@
+.graphic {
+    text-align: center;
+    width: 550px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 13px;
+    width: 525px;
+    margin: auto;
+    margin-top: 0px;
+}
+
+ul {
+    list-style: circle;
+}
+
+.ate td {
+    height: 32px;
+}
+
+.ate td div {
+    display: inline-flex;
+}
+
+
+.leftovers tr {
+    text-align: center;
+}
+
+.leftovers td {
+    height: 32px;
+    width: 20px;
+}
+
+.leftovers td div {
+    width: 100%;
+    border-radius: 100%;
+    border: solid 1px black;
+}

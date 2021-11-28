@@ -1,0 +1,40 @@
+.data {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.data td {
+    white-space: nowrap;
+    height: 175px;
+}
+
+.data td img {
+    height: 150px;
+    width: 150px;
+    border-top: solid black 4px;
+    border-bottom: solid black 4px;
+    padding: 0;
+}
+
+.data tr td:nth-child(3) {
+    width: 10vw;
+}
+
+.data tr td:nth-child(1),
+.data tr td:nth-child(2) {
+    float: left;
+}
+
+.data tr td:nth-child(1) img {
+    border-left: solid black 4px;
+}
+
+.data tr td:nth-child(5) img {
+    border-right: solid black 4px;
+}
+
+.e {
+    margin: auto;
+}

@@ -1,0 +1,27 @@
+.grid {
+  border-collapse: collapse;
+}
+.grid td {
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  border: solid 1px #777;
+  background-color: white;
+}
+.grid td.b {
+  background-color: black;
+}
+.cross,
+.pai,
+.columns {
+  float: left;
+  width: 33.33%;
+}
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pai ul {
+  list-style: circle;
+}

@@ -1,0 +1,37 @@
+.clues {
+  list-style: circle;
+  font-family: "DM Mono";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table tr:nth-child(2n) td {
+  height: 20px;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: top;
+  display: none;
+}
+
+table td input {
+  width: 26px;
+  height: 30px;
+  font-family: "DM Mono", monospace;
+  text-align: center;
+  font-size: 18px;
+  outline: none;
+  border: solid 1px black;
+  text-transform: uppercase;
+}
+
+.subnote {
+  font-size: 13px;
+  color: #a0a0a0;
+}
+
+#alert section.note {
+  text-align: center;
+}

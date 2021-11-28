@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kang's Cross</title>
+    <meta name="site_name" content="Thanksgiving 2021 Puzzles" />
+    <meta property="og:title" content="Kang's Cross" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:site_name" content="Thanksgiving 2021 Puzzles" />
+    <meta name="theme-color" content="#ffa600" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="puzzle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha256.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MD06EHP2ZN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-MD06EHP2ZN');
+    </script>
+    <script src="../../scripts/main.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="back">
+            <a href="../../">← Back to all puzzles</a>
+        </div>
+        <div id="alert" class="modal alert"></div>
+        <div class="guess">
+            <input type="text" id="guess-box" class="guess-box" maxlength="30" placeholder="" />
+            <button type="submit" id="submit">Submit</button>
+        </div>
+        <br />
+        <h2 class="title">Kang's Cross</h2>
+        <p class="solved">Solved: <span class="solution"></span></p>
+        <div class="puzzle-content">
+            <p class="flavor">The recipe for this dish probably needs some Googling or translating...</p>
+            <div class="wrapper">
+                <div class="cross">
+                    <ul>
+                        <table class="grid">
+                            <thead>
+                                <tr>
+                                    <th title="">&nbsp;&nbsp;</th>
+                                    <th title="A">A.</th>
+                                    <th title="">&nbsp;&nbsp;</th>
+                                    <th title="B">B.</th>
+                                    <th title="">&nbsp;&nbsp;</th>
+                                    <th title="C">C.</th>
+                                    <th title="">&nbsp;&nbsp;</th>
+                                    <th title="D">D.</th>
+                                    <th title="">&nbsp;&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>8</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>2</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>11</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>4</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>15</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>10</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>12</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>6</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>9</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>3</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>7</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>13</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>1</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>5</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>14</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </ul>
+                    <ul>
+                        <li>[2&nbsp;&nbsp;3&nbsp;&nbsp;3&nbsp;&nbsp;2&nbsp;&nbsp;5] → [7]</li>
+                        <ul>
+                </div>
+                <div class="pai">
+                    <p><b>Pai</b></p>
+                    <ul>
+                        <li>ta faming le diandengpao (6)</li>
+                        <li>ta shi "pengyou" dianshi jiemu de "lü se" (7)</li>
+                        <li>ta shi meiguo zui youming de ticao yundongyuan (5)</li>
+                        <li>weiyi de mingzi ke zai boshidun jiaoxiangyue ting shang (9)</li>
+                        <li>ta huodele er shi san ge aoyun jinpai (6)</li>
+                        <li>meiguo di san wei zongtong (9)</li>
+                        <li>ta shi meiguo youming de nüzi youyong yundongyuan, huodele qi ge aoyun jinpai (7)</li>
+                        <li>luoshanji huren dui de di liu hao (yong di yi ge mingzi) (6)</li>
+                        <li>ta shi pitoushi yuedui de zhuchang, chang le "dang wo liu shi si sui" (9)</li>
+                        <li>ta shi meiguo zhumin de wangqiu yundongyuan, yin le wenbu'erdeng san ci (7)</li>
+                        <li>ta zai yi jiu si wu nian gen luosifu he sidalin you yi ge zhumin de huimian (9)</li>
+                        <li>ben, kai wen, ke lei'er, li bei ka, mai ke'er, tang mi, he yi wa de pengyou (7)</li>
+                        <li><i>[ni yao de da'an]</i></li>
+                        <li>ta chang de gequ baokuo: "er shi er", "ni shi shuyu wo de", "women yongyuan zai ye bu hui
+                            zai yiqi le" (5)</li>
+                        <li>kennidi bei sha le yihou, ta chengwei meiguo zongtong (7)</li>
+                    </ul>
+                </div>
+                <div class="columns">
+                    <p><b>Columns</b></p>
+                    <table>
+                        <tr>
+                            <td>A.</td>
+                            <td>51 is a famous one</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Islamic leader</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>It&#39;s used to launch nukes</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Sensory nerve in the calf</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Less common prefix meaning &quot;water&quot;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Between flop and river</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>It&#39;s often defeated by water</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>B.</td>
+                            <td>The 1st row has five of them; the 2nd row had none of them</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Nasty or unpleasant</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>That&#39;s not ___!</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Circular paintings</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>___ Your Enthusiasm</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Pad ___</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Funny internet image</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>C.</td>
+                            <td>Son of Odin</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Mystery ___</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>___ Gault</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Sibling&#39;s daughter</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Jack&#39;s partner</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>___pasto</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Protocol for file transfer</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>D.</td>
+                            <td>Christmas in Paris</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Part of speech</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Operating system</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Indian viglante thriller film</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Hemoglobin contains it</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Language in the NATO alphabet</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Spunkmeyer</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
